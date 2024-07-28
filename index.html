@@ -3,16 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/styles.media.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.media.css" />
     <link rel="stylesheet" href="path/to/reset-and-normalize.min.css">
     <title>Lasles-VPN</title>
   </head>
   <body>
- 
+    <main>
+      <div class="container"></div>
+      <div class="header-container">
+        <div class="wrapper">
+          <header>
+            <button id="nav-toggler-btn" class="nav-toggler-ctr">
+              <img class="nav-toggler" src="" />
+            </button>
+            <div class="logo-ctr">
+              <img src="./assets/img/logo.svg" alt="LaslesVPN" />
+            </div>
+            <nav>
+              <p class="menu-title nav-title">Menu</p>
+              <ul class="nav-item-list">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#help" class="nav-link">Help</a>
+                </li>
+              </ul>
+            </nav>
+            <button id="login-toggler-btn" class="login-toggler-ctr">
+              <img class="login-toggler" src="" />
+            </button>
+            <div class="header-sign-btns">
+              <p class="menu-title login-title">Sign In or Join</p>
+              <button class="btn sign-in-btn">Sign In</button>
+              <button class="btn btn-light sign-up-btn">Sign Up</button>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="wrapper">
+          <section id="about" class="call-action">
+            <div class="call-action-info">
+              <div class="call-action-text">
+                <h1 class="call-action-text-header">
+                  Want anything to be easy with <span>LaslesVPN.</span>
+                </h1>
+                <p class="call-action-text-desc sub-desc">
+                  Provide a network for all your needs with ease and fun using
+                  <span>LaslesVPN</span> and discover interesting features from
+                  us.
+                </p>
+              </div>
+              <div class="call-action-btn-ctr">
+                <button class="call-action-btn btn-dark">Get Started</button>
+              </div>
+            </div>
+            <div class="call-action-img-ctr">
+              <img src="./assets/img/banner.svg" />
+            </div>
+          </section>
+          <section class="stats">
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="./assets/img/user.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">90+</p>
+                <p class="text-label">Users</p>
+              </div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="./assets/img/location.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">30+</p>
+                <p class="text-label">Locations</p>
+              </div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-img-ctr">
+                <img src="./assets/img/Server.svg" />
+              </div>
+              <div class="stats-text">
+                <p class="text-num">50+</p>
+                <p class="text-label">Servers</p>
+              </div>
+            </div>
+          </section>
 
-    
-    <script src="/app.js"></script>
+        </div>
+      </div>
 
+      <div class="footer-container">
+        <div class="wrapper">
+          <footer>
+            <div class="company-info">
+              <div class="footer-logo-ctr">
+                <img src="./assets/img/logo.svg" />
+              </div>
+              <div class="company-desc-text">
+                <p class="company-desc sub-desc">
+                  <span>LaslesVPN</span> is a private virtual network that has
+                  unique features and has high security.
+                </p>
+              </div>
+              <div class="social-media-links">
+                <a href="#" class="social-media-icon-ctr">
+                  <img
+                    class="social-media-icon"
+                    src="./assets/img/fb.svg"
+                  />
+                </a>
+                <a href="#" class="social-media-icon-ctr">
+                  <img
+                    class="social-media-icon"
+                    src="./assets/img/it.svg"
+                  />
+                </a>
+                <a href="#" class="social-media-icon-ctr">
+                  <img
+                    class="social-media-icon"
+                    src="./assets/img/tw.svg"
+                  />
+                </a>
+              </div>
+              <p class="copyright">©2020LaslesVPN</p>
+            </div>
+            <div id="help" class="footer-links">
+              <div class="link-col">
+                <p class="link-col-label">Product</p>
+                <a class="footer-link" href="#">Download</a>
+                <a class="footer-link" href="#">Pricing</a>
+                <a class="footer-link" href="#">Locations</a>
+                <a class="footer-link" href="#">Server</a>
+                <a class="footer-link" href="#">Countries</a>
+                <a class="footer-link" href="#">Blog</a>
+              </div>
+              <div class="link-col">
+                <p class="link-col-label">Engage</p>
+                <a class="footer-link" href="#">LaslesVPN?</a>
+                <a class="footer-link" href="#">FAQ</a>
+                <a class="footer-link" href="#">Tutorials</a>
+                <a class="footer-link" href="#">About Us</a>
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Terms of Services</a>
+              </div>
+              <div class="link-col">
+                <p class="link-col-label">Earn Money</p>
+                <a class="footer-link" href="#">Affiliate</a>
+                <a class="footer-link" href="#">Become Partner</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <script src="app.js"></script>
+    </main>
   </body>
 </html>
