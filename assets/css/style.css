@@ -18,11 +18,6 @@ body {
   margin: 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1152px;
@@ -35,6 +30,11 @@ button {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .header-container {
@@ -337,6 +337,52 @@ nav.hide {
   font-size: 1.25rem;
   margin: 0;
   color: var(--text-color-light);
+}
+
+/* Feature */
+
+.features-provider {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 130px;
+}
+
+.features-img-ctr {
+  min-width: 500px;
+}
+
+.feature-header {
+  margin-bottom: 20px;
+}
+
+.feature-desc {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.features-text {
+  max-width: 380px;
+  font-size: 1rem;
+}
+
+.feature-list {
+  padding-left: 0;
+}
+
+.feature-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: var(--text-color-light);
+}
+
+.feature-list-item span {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 10px;
 }
 
 /* Footer */
