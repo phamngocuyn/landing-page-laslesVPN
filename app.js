@@ -108,7 +108,7 @@ function makeSlideshow(sliderSelector) {
   setInterval(() => {
     let nextTestimonialIndex = currentTestimonialIndex === testimonialItems.length - 1 ? 0 : currentTestimonialIndex + 1;
     setCurrentTestimonial(nextTestimonialIndex);
-  }, 5000); 
+  }, 5000);
 }
 
 makeSlideshow('.slider-1');
