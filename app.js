@@ -113,3 +113,36 @@ function makeSlideshow(sliderSelector) {
 
 makeSlideshow('.slider-1');
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navTogglerBtn = document.getElementById('nav-toggler-btn');
+  const loginTogglerBtn = document.getElementById('login-toggler-btn');
+  const nav = document.querySelector('nav');
+  const headerSignBtns = document.querySelector('.header-sign-btns');
+
+  navTogglerBtn.addEventListener('click', function() {
+    nav.classList.toggle('active');
+    headerSignBtns.classList.remove('active');
+  });
+
+  loginTogglerBtn.addEventListener('click', function() {
+    headerSignBtns.classList.toggle('active');
+    nav.classList.remove('active');
+  });
+
+  // Đóng menu khi click vào liên kết
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      nav.classList.remove('active');
+      headerSignBtns.classList.remove('active');
+    });
+  });
+
+  // Đóng menu khi click bên ngoài
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('header')) {
+      nav.classList.remove('active');
+      headerSignBtns.classList.remove('active');
+    }
+  });
+});

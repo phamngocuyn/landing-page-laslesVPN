@@ -46,7 +46,51 @@
 }
 
 @media (max-width: 768px) {
-  .sec-4 {
+
+  .nav-toggler-ctr {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggler {
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/menu.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+  }
+
+  nav, .header-sign-btns {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  nav.active, .header-sign-btns.active {
+    display: block;
+  }
+
+  .nav-item-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .footer-container {
     margin-top: -165px;
   }
 
